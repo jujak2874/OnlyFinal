@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+#C {
+	margin-top: 31px;
+	height: 527px;
+	width: 455px;
+	margin-left: 10px;
+	z-index: 1;
+}
+
+.B {
+	width: 452px;
+	height: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #2377ff;
+	border: 1px solid #2377ff;
+	outline: none;
+	cursor: pointer;
+}
+.F {
+	width: 452px;
+	height: 30px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #7aadff;
+	transition: background-color 0.5s;
+	transition: border-color, 0.5s;
+	border: 1px solid #7aadff;
+	outline: none;
+}
+
+#place {
+	font-size: x-large;
+	position: relative;
+	top: 0px;
+	height: 25px;
+	width: 455px;
+}
+
+#placeI {
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+
+.other {
+	width: 455px !important;
+	height: 50px !important;
+}
+
+.F:hover {
+	background-color: #2377ff;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #2377ff;
+}
+
+#chatBtn:hover {
+	background-color: #2377ff !important;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid #2377ff;
+}
+
+#chatBtn {
+	background-color: #7aadff !important;
+	border: 1px solid #7aadff !important;
+	transition: background-color, 0.5s;
+	transition: border-color, 0.5s;
+}

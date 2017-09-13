@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+@media screen and (min-width:512px) and (max-width:1024px) {
+	body {
+		margin: 0;
+	}
+	.header {
+		background-color: #3f5068;
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		z-index: 999;
+		border-bottom: 1px solid #a8b1bf;
+		box-sizing: border-box;
+	}
+	.header_hidden {
+		width: 100%;
+		height: 50px;
+	}
+	.head_logo {
+		display: inline-block;
+		height: 50px;
+		left: 5px;
+		margin: 0;
+		position: absolute;
+	}
+	#logo_top {
+		height: 50px;
+	}
+	#logo_href {
+		position: absolute;
+		height: 50px;
+	}
+	.search {
+		width: 450px;
+		position: absolute;
+		display: inline-block;
+		left: 80px;
+		top: 10px;
+	}
+	.searchTerm {
+		float: left;
+		width: 350px;
+		border: 2px solid #97a6bf;
+		padding: 5px;
+		height: 15px;
+		border-radius: 5px;
+		outline: none;
+		color: #97a6bf;
+		display: inline-block;
+	}
+	.searchTerm:focus {
+		color: #97a6bf;
+	}
+	.form-wrapper button {
+		overflow: visible;
+		position: relative;
+		float: right;
+		border: 0;
+		padding: 0;
+		cursor: pointer;
+		height: 29px;
+		width: 50px;
+		font: bold 10px/15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+		color: #FFF;
+		text-transform: uppercase;
+		background: #97a6bf;
+		-moz-border-radius: 0 3px 3px 0;
+		-webkit-border-radius: 0 3px 3px 0;
+		border-radius: 0 3px 3px 0;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+		display: inline-block;
+		right: 50px;
+	}
+	.form-wrapper button:hover {
+		background: #6c7f9b;
+	}
+	.form-wrapper button:active, .form-wrapper button:focus {
+		background: #758499;
+	}
+	.form-wrapper button:before {
+		content: '';
+		position: absolute;
+		border-width: 8px 8px 8px 0;
+		border-style: solid solid solid none;
+		border-color: transparent #97a6bf transparent;
+		top: 7px;
+		left: -6px;
+	}
+	.form-wrapper button:hover:before {
+		border-right-color: #6c7f9b;
+	}
+	.form-wrapper button:focus:before {
+		border-right-color: #97a6bf;
+	}
+	.timeline_main {
+		width: 100%;
+		display: block;
+		background-color: #3f5068;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: center;
+		overflow: auto;
+	}
+	.timeline_post {
+		width: 90%;
+		display: block;
+		float: left;
+		margin-left: 5%;
+	}
+	.timeline_aside {
+		width: 20%;
+		height: 1000px;
+		float: left;
+		display: none;
+		margin-left: 2%;
+	}
+	.infinite_scroll {
+		background-color: #FFF;
+		border-radius: 5px;
+		padding: 20px;
+		margin-bottom: 25px;
+		width: 90%;
+		padding-top: 5px;
+	}
+	.page_margin {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.aside_follow {
+		background-color: #FFF;
+		border-radius: 5px;
+		padding: 10px;
+		padding-top: 5px;
+		margin-bottom: 25px;
+		width: 90%;
+	}
+	.aside_interested {
+		background-color: #FFF;
+		border-radius: 5px;
+		padding: 10px;
+		padding-top: 5px;
+		margin-bottom: 25px;
+		width: 90%;
+	}
+	.type_choice_box {
+		background-color: #FFF;
+		border-radius: 5px;
+		width: 90%;
+		margin-bottom: 25px;
+		position: relative;
+		clear: both;
+		min-height: 80px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* .type_choice {
+	width: 20%;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	color: #2b2b2b;
+} */
+
+	/* .type_choice:hover {
+	background-color: #adbed8;
+	border: 1px solid #adbed8;
+	box-sizing: border-box;
+} */
+	.type_choice_img {
+		width: 40px;
+		height: 40px;
+	}
+	.post_view_box {
+		list-style-type: none;
+	}
+	.choice_box_next {
+		display: none;
+	}
+	.choice_box_prev {
+		display: inline-block;
+	}
+	.type_choice_textarea {
+		margin-top: 15px;
+		resize: none;
+		color: black;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 500;
+		font-size: 15px;
+		border-radius: 5px;
+		line-height: 22px;
+		background-color: #FFF;
+		border: 1px solid #adbed8;
+		transition: all 0.3s;
+		padding: 5px;
+		width: 100%;
+		box-sizing: border-box;
+		outline: 0;
+		height: 30px;
+		overflow: hidden;
+		margin-bottom: 0;
+	}
+	.type_choice_textarea:focus {
+		border: 3px solid #adbed8;
+		box-sizing: border-box;
+		font-color: #6c7f9b;
+		margin-bottom: 0;
+	}
+	*:focus {
+		outline: none;
+	}
+	.post_submit_btn {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+		width: 100%;
+		background: #adbed8;
+		border-radius: 5px;
+		border: 0;
+		cursor: pointer;
+		color: white;
+		font-size: 24px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		transition: all 0.3s;
+		font-weight: 700;
+		margin-bottom: 10px;
+		font-size: 1.2rem;
+	}
+	.post_submit_btn:hover {
+		background: #6c7f9b;
+	}
+	.img_hidden {
+		display: none;
+	}
+	.choice_type {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+	ul, li {
+		list-style-type: none;
+	}
+	.write_type_choice {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.infinite_scroll>a {
+		font-size: 14px;
+		vertical-align: middle;
+	}
+	.comment_textarea {
+		margin-top: 0px;
+		resize: none;
+		color: black;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 500;
+		font-size: 15px;
+		border-radius: 5px;
+		line-height: 22px;
+		background-color: #FFF;
+		border: 1px solid #adbed8;
+		transition: all 0.3s;
+		padding: 5px;
+		width: 80%;
+		box-sizing: border-box;
+		outline: 0;
+		height: 30px;
+		overflow: hidden;
+		margin-bottom: 0;
+		display: block;
+		float: left;
+	}
+	.commentBtn{
+		float: left;
+		width: 15%;
+		height: 30px;
+		box-sizing: border-box;
+		background: #adbed8;
+		border-radius: 5px;
+		border: 0;
+		cursor: pointer;
+		color: white;
+		display: block;
+	}
+	.commentView{
+		position: relative;
+		top: 15px;
+	}
+	.commentViewMid{
+		font-weight: bold;
+		font-size: 0.9em;
+	}
+	.commentViewCre{
+		font-size: 0.8em;
+		margin-left: 5px; 
+	}
+	.commentViewMid{
+		font-size: 1.5em;
+	}
+	.comment_textarea:focus {
+		border: 3px solid #adbed8;
+		box-sizing: border-box;
+		font-color: #6c7f9b;
+		margin-bottom: 0;
+	}
+	.reactBtn {
+		width: 100%;
+		height: 40px;
+	}
+	.heart {
+		position: relative;
+		cursor: pointer;
+		height: 40px;
+		width: 40px;
+		background-image:
+			url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: 2900%;
+		overflow: hidden;
+		display: inline-block;
+		float: left;
+	}
+	
+	.on {
+		position: relative;
+		cursor: pointer;
+		height: 40px;
+		width: 40px;
+		background-image:
+			url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: 2900%;
+		overflow: hidden;
+		display: inline-block;
+		float: left;
+	}
+	
+	.comments {
+		position: relative;
+		cursor: pointer;
+		background-image: url("../img_timeline/chat.svg");
+		height: 20px;
+		width: 20px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		margin-bottom: 15px;
+		float: left;
+	}
+	.share {
+		position: relative;
+		cursor: pointer;
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+	}
+	.share_out {
+		background-image:
+			url("https://cdn3.iconfinder.com/data/icons/essentials-vol-1-1/512/Link-256.png");
+		background-repeat: no-repeat;
+		background-size: 25px;
+		background-position: center;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		float: left;
+	}
+	.is_animating {
+		animation: heart-burst .8s steps(28) 1;
+	}
+	.bg-position {
+		background-position: right;
+	}
+	#layerPop {
+		width: 36.3%;
+		height: 200px;
+		position: fixed;
+		padding: 10px;
+		background: #fff;
+		display: none;
+		z-index: 100;
+		margin-left: 40px;
+		box-sizing: border-box;
+	}
+	#layerPop .close {
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+	#deemed {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		filter: Alpha(opacity = 50);
+		opacity: 0.5;
+		background: #000;
+		z-index: 1;
+	}
+	.postImg{
+		height: 200px; 
+		width: 50%; 
+		display: inline;
+	}
+	hr {
+		margin-bottom: 3px;
+	}
+	/* .heart:hover {
+ background-position:right;
+} */
+	@keyframes heart-burst {
+		from {
+			background-position: left;
+		}
+		to {
+			background-position: right;
+		}
+}

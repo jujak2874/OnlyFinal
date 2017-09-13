@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+body {
+	background-color: #3f5068;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.search_view_box {
+	list-style-type: none;
+}
+
+.search_main {
+	width: 100%;
+	display: block;
+	/* background-color: #3f5068; */
+	overflow: auto;
+}
+
+.search_post {
+	width: 40%;
+	display: block;
+	float: left;
+	margin-left: 18%;
+}
+
+.search_view_box {
+	list-style-type: none;
+}
+
+.search_result {
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 20px;
+	padding-top: 20px;
+	margin-bottom: 25px;
+	width: 90%;
+	padding-top: 5px;
+}
+
+.search_result .search_profile {
+	display: block;
+}
+
+.search_result .search_profile img {
+	/* height:100%; */
+	width: 40px;
+	float: left;
+	vertical-align: middle;
+	visibility: visible;
+}
+
+.search_result .search_profile h3 {
+	vertical-align: middle;
+}
+
+.show {
+	z-index: 1000;
+	position: absolute;
+	background-color: #ffffff;
+	border: 1px solid #c0c0c0;
+	/* padding: 2px; */
+	display: block;
+	margin: 0;
+	list-style-type: none;
+	list-style: none;
+}
+
+.hide {
+	display: none;
+}
+
+.show ul {
+	-webkit-padding-start: 2em;
+}
+
+.show li {
+	list-style: none;
+}
+
+.show a {
+	border: 0 !important;
+	text-decoration: none;
+}
+
+.show a:hover {
+	text-decoration: underline !important;
+}
+
+.header_profile {
+	width: 40%;
+	display: inline-block;
+	float: right;
+	left: 80px;
+	top: 10px;
+}
+
+.header_profile .header_wraper {
+	display: inline-block;
+	padding: 0 50px 0 0;
+	height: 22px;
+}
+
+.nav_icon {
+	float: left;
+}
+
+.header_profile .header_wraper .nav_icon .friend_list, .header_profile .header_wraper .nav_icon .alarm_list
+	 . .header_profile .header_wraper .nav_icon .message_list {
+	float: none;
+	margin: 5px 0 6px 0;
+	position: relative;
+}
+
+.friend_list a.info, .alarm_list a.info {
+	/* position: relative; this is the key
+   color: #000;
+   text-decoration: none;
+   text-align: center; */
+	/*    display: inline;
+   margin: 0;
+   outline: none;
+   padding-left: 3px;
+   padding-right: 3px;
+   padding-top: 4px;
+   position: relative;
+   text-decoration: none; */
+	
+}
+
+#alarm_notification span, #message_notification span, #friend_notification span{
+	display: none;
+}
+
+.heart span{
+	display: none;
+}
+
+.heart:hover span{
+	display: inline;
+}
+
+.heart:hover span:after{
+	display: inline;
+}
+.navImage:hover span,
+#friend_notification:hover span,
+#alarm_notification:hover span,
+#message_notification:hover span
+{ /*the span will display just on :hover state*/
+	padding: 5px;
+	display: block;
+	position: absolute;
+	top: 50px;
+	font-weight: bold;
+	font-size: 0.8em;
+	background-color: #000040;
+	color: #fff;
+	text-align: center;
+}
+
+.navImage:hover span:after,
+.heart:hover span:after,
+#friend_notification:hover span:after,
+#alarm_notification:hover span:after,
+#message_notification:hover span:after {
+	/*the span will display just on :hover state*/
+	padding: 5px;
+	display: block;
+	position: absolute;
+	top: 50px;
+	font-weight: bold;
+	font-size: 0.8em;
+	background-color: #000040;
+	color: #fff;
+	text-align: center;
+}
+
+.friend_list .navImage {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -185px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+
+#friend_notification {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -185px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+#friend_notification.alert {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -227px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+
+.alarm_list .navImage {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -142px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+
+#alarm_notification {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -142px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+#alarm_notification.alert {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -100px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+#message_notification {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -518px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+#message_notification.alert {
+	position: relative;
+	cursor: pointer;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img_all/notification.png);
+	background-position: 0 -560px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	overflow: visible;
+}
+
+
+
+/* .header_profile .header_wraper .alarm_list {
+   display: inline-block;
+}
+
+.header_profile .header_wraper .message_list {
+   display: inline-block;
+}
+ */
+.header_profile a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: transparent;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 17px;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: bold;
+	height: 40px;
+	line-height: 28px;
+	padding: 0 5px 1px;
+	position: relative;
+	text-decoration: none;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+.header_profile a img {
+	height: 38px;
+}
+
+span {
+	font-family: inherit;
+}
+
+.accessible_elem {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+#displayChatList span {
+	border: 2px solid #adbed8;
+	border-radius: 10px;
+	padding: 5px;
+	display: block;
+	position: absolute;
+	top: 50px;
+	font-weight: bold;
+	font-size: 0.8em;
+	background-color: #FFF;
+	color: #000;
+	text-align: left;
+	width: 20%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#displayChatList span ul {
+	padding: 0;
+	color: #000;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#displayChatList span ul li {
+	border-bottom: 1px solid #adbed8;
+	color: #000;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#displayChatList span ul li:last-child {
+	border-bottom: 0;
+	color: #000;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#displayChatList span ul li a{
+	color: #000;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.chatListToggle {
+	display: none;
+}
+
+
+
+
+
+#chatRoomDisplay .sentMsg {
+	float: right;
+	width: 60%;
+	text-align: right;
+	overflow-wrap: break-word;
+	display: block;
+	padding: 2px 5px;
+	margin: 5px;
+	background-color: rgba(255, 140, 140, 0.4);
+	border-bottom-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+#chatRoomDisplay .chatSender {
+	
+}
+
+#chatRoomDisplay .chatMessage {
+	display: inline;
+}
+
+#chatRoomDisplay .sentMsg .chatMessage {
+	
+}
+
+#chatRoomDisplay .chatCreated {
+	
+}
+
+#chatRoomDisplay .receivedMsg {
+	/* background-color: grey; */
+	text-alight: left;
+	overflow-wrap: break-word;
+	float: left;
+	width: 60%;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: rgba(140, 201, 255, 0.4);
+	display: block;
+	padding: 2px 5px;
+	margin: 5px;
+}
+
+#chatRoomDisplay .receivedMsg img {
+	float: left;
+	width: 20px;
+	margin-right: 10px;
+}
